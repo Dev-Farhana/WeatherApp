@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Impact, Haettenschweiler;
+    height: 50vh;
+}
+.container{
+    width: 400px;
+    height: 500px;
+    margin: 50px auto;
+    background-color: #f7f7f7;
+    text-align: center;
+    font-size: larger;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    padding: 20px 0 ;
+}
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+    color: silver;
+}
+form>input{
+    opacity: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid silver;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+  
+form input[type="submit"] {
+    background-color: sandybrown;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px ;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+  
+form input[type="submit"]:hover {
+    background-color: tan;
+}
+  
+.icon img {
+    width: 100px;
+}
+  
+.temperature {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: teal;
+}
+  
+.description{
+      font-size: 26px;
+      margin-bottom: 20px;
+      text-transform: capitalize;
+      color: gray;
+}
+  
+.details{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+}
+  
+.details > div{
+      padding: 20px;
+      background-color: #f1f1f1;
+      margin: 10px;
+      flex: 1;
+      border-radius: 5px;
+      text-align: center;
+      min-height: 45px;
+      color: teal;
+}
+  
+@media (max-width: 768px){
+      form {
+          flex-direction: column;
+      }
+  
+      form input[type="text"]{
+          width: 100%;
+          margin-bottom: 10px;
+      }
+  }
